@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #0c0c1d;
+  color: #eee;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: rgba(10, 10, 25, 0.9);
+  border-bottom: 1px solid #4b0082;
+}
+
+.logo {
+  width: 120px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 30px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #b366ff;
+}
+
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  background: radial-gradient(circle at top, #1a0033, #0c0c1d);
+  animation: fadeIn 2s ease;
+}
+
+.hero h1 {
+  font-size: 2.8em;
+  margin-bottom: 10px;
+  color: #b366ff;
+}
+
+.hero span {
+  color: #fff;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #b366ff;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #b366ff;
+  transform: scale(1.05);
+}
+
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #b366ff;
+  margin-bottom: 40px;
+}
+
+.service-grid,
+.project-grid {
+  display: grid;
+  gap: 25px;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card,
+.project-card {
+  background: #14142b;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(179, 102, 255, 0.2);
+  transition: transform 0.3s;
+}
+
+.card:hover,
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form input,
+form textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+form button {
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #4b0082;
+  background: #0a0a1a;
+  font-size: 0.9em;
+  color: #999;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
